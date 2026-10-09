@@ -8,7 +8,7 @@ export async function GET(): Promise<Response> {
   const xml = renderRssFeed({
     title: `${siteName()} changelog`,
     link: `${siteUrl()}/changelog`,
-    description: `Product updates from ${siteName()}, published with scatterpost.`,
+    description: `Product updates from ${siteName()}.`,
     posts: changelogPosts,
   });
 

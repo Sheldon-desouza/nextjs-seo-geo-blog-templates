@@ -31,11 +31,13 @@ export const SOCIAL_LINKS: SiteLink[] = [
 ];
 
 /**
- * The optional "Published with scatterpost" footer line. On by default,
- * but only actually shown once the newer "Built with a scatterpost
- * template" credit is turned off (`NEXT_PUBLIC_SHOW_SCATTERPOST_CREDIT=
- * false`): a footer never carries both. Set
- * `NEXT_PUBLIC_SHOW_SCATTERPOST_BADGE=false` as well to show neither.
+ * The optional "Published with scatterpost" footer line. Enabled by
+ * default, but only shown when the scatterpost connector is configured
+ * (`SCATTERPOST_WEBHOOK_SECRET` or `SCATTERPOST_API_KEY` is set) and the
+ * "Built with nextjs-seo-geo-blog-templates" credit is turned off
+ * (`NEXT_PUBLIC_SHOW_SCATTERPOST_CREDIT=false`): a footer never carries
+ * both. Set `NEXT_PUBLIC_SHOW_SCATTERPOST_BADGE=false` as well to show
+ * neither.
  */
 export function showScatterpostBadge(): boolean {
   return process.env.NEXT_PUBLIC_SHOW_SCATTERPOST_BADGE !== "false";

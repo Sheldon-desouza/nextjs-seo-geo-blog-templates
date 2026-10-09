@@ -17,7 +17,7 @@ export async function GET(): Promise<Response> {
   const header = [
     `# ${siteName()}`,
     "",
-    `> ${siteName()}, published with scatterpost, at ${site}. Full text of every post follows.`,
+    `> ${siteName()}, at ${site}. Full text of every post follows.`,
     "",
   ].join("\n");
 

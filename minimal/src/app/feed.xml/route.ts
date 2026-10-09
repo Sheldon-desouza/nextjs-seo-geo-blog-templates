@@ -33,7 +33,7 @@ export async function GET(): Promise<Response> {
 <channel>
   <title>${escapeXml(siteName())}</title>
   <link>${escapeXml(site)}</link>
-  <description>${escapeXml(`${siteName()}, published with scatterpost.`)}</description>
+  <description>${escapeXml(`${siteName()}.`)}</description>
   ${items}
 </channel>
 </rss>`;

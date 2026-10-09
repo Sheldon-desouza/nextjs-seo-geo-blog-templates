@@ -1,6 +1,6 @@
 ---
 title: "Hello from the scatterpost demo"
-description: "What this demo blog is, how its posts arrived here, and what canonical means for every copy you will find elsewhere."
+description: "What this demo blog is, how its posts arrived here, and what canonical means for each copy you will find elsewhere."
 tags: ["changelog", "scatterpost"]
 date: "2026-09-30"
 slug: "hello-from-scatterpost-demo"
@@ -17,7 +17,7 @@ This is the demo blog for scatterpost, a publishing pipeline built for AI agents
 
 The flow for each of the posts on this blog was the same:
 
-1. An AI assistant, Claude Code in this case, drafted the post as plain Markdown with front matter: a title, a short description, tags and a slug.
+1. An AI assistant drafted the post as plain Markdown with front matter: a title, a short description, tags and a slug.
 2. scatterpost published it to this site first. This domain, `demo.scatterpost.io`, is the origin. Whatever URL this site returns for the post becomes its canonical address.
 3. Only after that step does scatterpost cross-post the same article elsewhere, with each copy's canonical field pointing back here.
 
@@ -27,7 +27,7 @@ If you find one of these posts mirrored on Dev.to or Hashnode, check its canonic
 
 A few things worth checking if you are curious how this is wired together, since they are not just decoration:
 
-- **Structured data.** View the page source on any post and you will find JSON-LD describing the article: headline, author, publish date. This is what lets search engines and AI tools understand the page as a specific article rather than a generic blob of text.
+- **Structured data.** View the page source on any post and you will find JSON-LD describing the article: headline, author, publish date. This can help search engines and AI tools understand the page as a specific article rather than a generic blob of text.
 - **RSS feed.** This blog publishes a standard RSS feed, auto-discoverable from the `<head>` of every page, so any feed reader can subscribe without being told the exact URL.
 - **Sitemap.** A sitemap at the root lists every post, kept current as new ones are added, and submitted to Google Search Console and Bing Webmaster Tools.
 - **llms.txt.** A short plain-text index of this blog's posts lives at `/llms.txt`, written for AI assistants that look for a curated summary of a site rather than crawling every page individually. The third post on this blog explains the idea properly, with an example.

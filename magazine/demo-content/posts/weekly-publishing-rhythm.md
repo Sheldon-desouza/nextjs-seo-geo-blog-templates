@@ -9,7 +9,7 @@ cover: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=1600&q=70
 coverAlt: "A MacBook Pro sitting closed on a brown wooden table."
 ---
 
-Most founders who say they will "blog weekly" stop after three posts. Not because the writing is hard, but because writing competes with everything else on the calendar, and everything else usually wins. The fix that actually holds up over months is not more discipline. It is changing which part of the job is yours.
+Plenty of founders who say they will "blog weekly" find it fades after a few posts. Not because the writing is hard, but because writing competes with everything else on the calendar, and everything else usually wins. The fix that actually holds up over months is not more discipline. It is changing which part of the job is yours.
 
 ## Split the work by what only you can do
 
@@ -48,7 +48,7 @@ A weekly post does not need to be definitive. It needs to be honest, specific, a
 
 ## Where scatterpost fits
 
-The drafting and publishing steps above are exactly the loop scatterpost is built for: your AI assistant, whether that is Claude, Claude Code or Cursor, drafts and schedules the post through a set of tools, scatterpost publishes it to your own blog first and cross-posts it to Dev.to, Hashnode, LinkedIn, Bluesky and Mastodon with the canonical link intact, then reports back what happened. The thinking and the editing stay yours. The retyping, the formatting for five different platforms and the remembering to actually hit publish do not have to be.
+The drafting and publishing steps above are exactly the loop scatterpost is built for: your AI assistant, such as Claude, ChatGPT or Gemini, drafts and schedules the post through a set of tools, scatterpost publishes it to your own blog first and cross-posts it to Dev.to, Hashnode, LinkedIn, Bluesky and Mastodon with the canonical link intact, then reports back what happened. The thinking and the editing stay yours. The retyping, the formatting for five different platforms and the remembering to actually hit publish do not have to be.
 
 A rhythm that survives a busy quarter is one where the founder's part of the job gets smaller every week, not bigger. Start there, and the weekly post stops being a resolution and starts being a habit.
 

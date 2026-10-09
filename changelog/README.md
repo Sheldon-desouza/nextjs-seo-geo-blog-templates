@@ -14,13 +14,13 @@ folder works if it is copied out on its own.
 
 ## Deploy with Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fscatterpost-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL)
 
 The button clones this one folder into its own repository, provisions a
 private Vercel Blob store for it, and prompts for the two environment
 variables push mode needs (`NEXT_PUBLIC_SITE_URL`,
 `SCATTERPOST_WEBHOOK_SECRET`). If you clone the whole
-`scatterpost-blog-templates` repository yourself instead, set the
+`nextjs-seo-geo-blog-templates` repository yourself instead, set the
 project's "Root Directory" to `changelog`.
 
 Pull mode needs a few more variables; see the table below and set them
@@ -138,8 +138,8 @@ scatterpost recorded.
   changelog entry (the breadcrumb reflects `/blog` or `/changelog`);
   `WebSite` plus `Person` or `Organization` JSON-LD on the home page.
 - `sitemap.xml` with `lastModified` covering both sections; `robots.txt`
-  that allows search and AI crawlers by name (GPTBot, ClaudeBot,
-  PerplexityBot, Google-Extended) and links the sitemap and both feeds.
+  that allows all crawlers and also names GPTBot, ClaudeBot,
+  PerplexityBot and Google-Extended explicitly, and links the sitemap and both feeds.
 - Two RSS feeds: `/feed.xml` (everything) and `/changelog/feed.xml`
   (changelog only), both linked from every page with
   `rel="alternate"`.
@@ -159,13 +159,11 @@ background lives in the repository root's `SETUP.md`. In short:
   put in `GOOGLE_SITE_VERIFICATION`, then submit `/sitemap.xml` so
   Google knows what to crawl.
 - **Bing Webmaster Tools**: the same idea, verified with
-  `BING_SITE_VERIFICATION`. Bing's index also feeds several AI
-  assistants (including Microsoft Copilot), so this one step reaches
-  further than Bing search alone.
+  `BING_SITE_VERIFICATION`.
 - **Google Analytics (GA4)**: optional. Set
   `NEXT_PUBLIC_GA_MEASUREMENT_ID` and a small cookie banner appears for
-  every visitor; nothing is tracked, and no cookie is set, until they
-  click Accept. "Cookie settings" in the footer lets them change their
+  every visitor; Google Analytics does not load, and sets no analytics
+  cookie, until they click Accept. "Cookie settings" in the footer lets them change their
   mind later.
 - **`robots.txt` and `llms.txt`**: generated automatically. `robots.txt`
   tells search engines and AI crawlers (GPTBot, ClaudeBot,
@@ -173,14 +171,15 @@ background lives in the repository root's `SETUP.md`. In short:
   `llms.txt` is a plain-text summary of this site written for an AI
   assistant to read directly.
 - **IndexNow**: optional. Set `INDEXNOW_KEY` and every publish pings
-  Bing (and the AI assistants it feeds) straight away, instead of
+  Bing straight away, instead of
   waiting for its next crawl.
-- **Footer credit**: "Built with a scatterpost template" links to
-  https://scatterpost.io/templates, shown by default. Set
+- **Footer credit**: "Built with nextjs-seo-geo-blog-templates" links to
+  the GitHub repository, shown by default. Set
   `NEXT_PUBLIC_SHOW_SCATTERPOST_CREDIT=false` to hide it, which brings
-  back the older "Published with scatterpost." sentence if
-  `NEXT_PUBLIC_SHOW_SCATTERPOST_BADGE` is not also set to `false`. A
-  footer never shows both at once.
+  back the older "Published with scatterpost." sentence, but only if the
+  scatterpost connector is configured (`SCATTERPOST_WEBHOOK_SECRET` or
+  `SCATTERPOST_API_KEY` is set) and `NEXT_PUBLIC_SHOW_SCATTERPOST_BADGE`
+  is not also set to `false`. A footer never shows both at once.
 
 None of this guarantees a ranking, a citation, or any particular amount
 of traffic; it simply gives search engines and AI assistants a clean,

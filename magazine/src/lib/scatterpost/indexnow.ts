@@ -1,7 +1,7 @@
 /**
  * IndexNow: an optional fire-and-forget ping to
- * https://api.indexnow.org/indexnow after a successful publish, so Bing
- * (and the AI assistants it feeds) can pick up a new post sooner than
+ * https://api.indexnow.org/indexnow after a successful publish, so search engines that support IndexNow
+ * can pick up a new post sooner than
  * its next crawl. `INDEXNOW_KEY` is the only configuration: when unset
  * or malformed, `pingIndexNow` does nothing, and the `/{key}.txt` route
  * (`src/app/api/indexnow-key/[key]/route.ts`) 404s.

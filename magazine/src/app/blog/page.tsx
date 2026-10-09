@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getStore, siteName } from "../../lib/site.ts";
+import { getStore } from "../../lib/site.ts";
 import { PostCard } from "../../components/post-card.tsx";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default async function BlogIndexPage() {
       <h1 className="index-page-heading">Writing</h1>
       {posts.length === 0 ? (
         <p className="story-card-dek">
-          No posts yet. Connect {siteName()} to scatterpost to publish the first one.
+          No posts yet. Check back soon for the first one.
         </p>
       ) : (
         <div className="story-grid">

@@ -13,7 +13,7 @@ export async function GET(): Promise<Response> {
   const lines = [
     `# ${siteName()}`,
     "",
-    `> ${siteName()}, published with scatterpost, at ${site}.`,
+    `> ${siteName()}, at ${site}.`,
     "",
     "## Posts",
     "",

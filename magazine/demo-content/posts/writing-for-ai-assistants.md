@@ -9,11 +9,11 @@ cover: "https://images.unsplash.com/photo-1612367980327-7454a7276aa7?w=1600&q=70
 coverAlt: "A white spiral notebook lying open on a brown wooden table."
 ---
 
-People increasingly ask an AI assistant a question instead of typing it into a search box. The assistant reads several pages, picks out the parts that answer the question, and sometimes names its source. None of this is guaranteed for any particular post, but there are concrete things you can do to make a page easier for an assistant to read and quote correctly, rather than skip over or misquote.
+Your next reader might ask an AI assistant before they search. The assistant reads several pages, picks out the parts that answer the question, and sometimes names its source. None of this is guaranteed for any particular post, but there are concrete things you can do to make a page easier for an assistant to read and quote correctly, rather than skip over or misquote.
 
 ## Answer the question in the first paragraph
 
-Search engines reward keywords; AI assistants reward clarity. When an assistant is summarising your page for a reader, it tends to pull from the first clear statement of the answer, not the lead-up to it. If your post opens with three paragraphs of scene-setting before the actual point, an assistant quoting your page may grab the scene-setting instead of the point, or skip the page for one that answers faster.
+Search engines and AI assistants read pages differently. When an assistant is summarising your page for a reader, it tends to pull from the first clear statement of the answer, not the lead-up to it. If your post opens with three paragraphs of scene-setting before the actual point, an assistant quoting your page may grab the scene-setting instead of the point, or skip the page for one that answers faster.
 
 Compare these two openings to a post titled "How do I set up a custom domain for my blog":
 
@@ -57,7 +57,7 @@ None of this means an assistant will cite your page, quote it correctly, or even
 
 ## Where scatterpost fits
 
-scatterpost's optimisation tooling checks for these same things before a post goes out: an answer-first opening paragraph, a sensible heading structure, and a reminder to update `llms.txt` and `llms-full.txt` when a new post is published to your own site. It flags gaps rather than inventing numbers about how often any of this works, because nobody outside the AI labs actually knows that figure yet.
+scatterpost's optimisation tooling can check for these same things when you ask it to, before a post goes out: an answer-first opening paragraph, a sensible heading structure, and a reminder to update `llms.txt` and `llms-full.txt` when a new post is published to your own site. It flags gaps rather than inventing numbers about how often any of this works, because nobody outside the AI labs actually knows that figure yet.
 
 Write for the person asking the question, structure the page so a machine can find the answer quickly, and the rest follows from habit rather than from any one trick.
 
