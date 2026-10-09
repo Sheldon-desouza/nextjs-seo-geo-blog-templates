@@ -13,15 +13,15 @@ A canonical URL is a single line of HTML that tells search engines and AI crawle
 
 ## Why this matters once you cross-post
 
-Say you write a post on your own blog, then also publish it to Dev.to, Hashnode and LinkedIn to reach people who already live on those platforms. Search engines now see the same text in four places. Without a canonical tag, they have to guess which one is the source, and search engines are not always kind to the guess. They might rank the Dev.to copy above your own site, simply because Dev.to has a stronger domain. You did the work, somebody else's domain gets the click.
+Say you write a post on your own blog, then also publish it to Dev.to, Hashnode and LinkedIn to reach people who already live on those platforms. Search engines now see the same text in four places. Without a canonical tag, they have to guess which one is the source, and the guess does not always go your way. A search engine might show the Dev.to copy above your own site, simply because Dev.to has a stronger domain. You did the work, somebody else's domain gets the click.
 
-A canonical tag removes the guessing. Dev.to and Hashnode both support a canonical URL field when you publish, and when you fill it in with a link back to your own post, you are telling every crawler: the real one lives here, this is a mirror. The ranking signals, the backlink value and the long-term traffic should accumulate on your own domain, not scatter across platforms you do not own.
+A canonical tag removes the guessing. Dev.to and Hashnode both support a canonical URL field when you publish, and when you fill it in with a link back to your own post, you are telling every crawler: the real one lives here, this is a mirror. The aim is for ranking signals, backlink value and long-term traffic to build up on your own domain rather than scatter across platforms you do not own, though no outcome is guaranteed.
 
 ## The founder mistake this avoids
 
-A common pattern among busy founders is to write first wherever is fastest: LinkedIn, Twitter, or a quick Dev.to post, because it is one click from idea to publish. The founder's own blog gets the leftovers, posted days later if at all, and sometimes just a copy-paste of the same text with no canonical link pointing anywhere. Over months, this means the founder's own site builds almost no authority, while all the traffic and backlinks pile up on platforms they do not control. If LinkedIn changes its algorithm, or Dev.to deprioritises external links, there is no fallback: the founder's own domain was never the one growing.
+One pattern to avoid is writing first wherever is fastest: LinkedIn, Twitter, or a quick Dev.to post, because it is one click from idea to publish. The founder's own blog gets the leftovers, posted days later if at all, and sometimes just a copy-paste of the same text with no canonical link pointing anywhere. Over months, this can mean the founder's own site builds little authority, while traffic and backlinks collect on platforms they do not control. If LinkedIn changes its algorithm, or Dev.to deprioritises external links, there is no fallback: the founder's own domain was never the one growing.
 
-Publishing to your own site first and only then cross-posting keeps the order right. Your site gets the earliest version, the canonical tag on every copy points home, and your domain is the one compounding in search results over time.
+Publishing to your own site first and only then cross-posting keeps the order right. Your site gets the earliest version, each copy has a canonical tag that points home, which can help your own domain build up in search results over time.
 
 ## What to check on each platform
 
@@ -35,7 +35,7 @@ Not every platform calls it the same thing, and not all of them let you set it:
 | LinkedIn | No canonical field | Short-form only; link back in the text instead |
 | Medium | Set via the Import tool | Importing from your URL sets it automatically |
 
-If a platform has no canonical field at all, the next best thing is a plain link back to the original post near the top of the text, so a reader (and, increasingly, an AI assistant summarising the page) can still find the source.
+If a platform has no canonical field at all, the next best thing is a plain link back to the original post near the top of the text, so a reader (or an AI assistant summarising the page) can still find the source.
 
 ## A quick way to check your own site
 

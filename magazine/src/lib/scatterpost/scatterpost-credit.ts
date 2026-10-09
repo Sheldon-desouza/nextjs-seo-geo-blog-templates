@@ -1,5 +1,5 @@
 /**
- * The "Built with a scatterpost template" footer line: plain
+ * The "Built with nextjs-seo-geo-blog-templates" footer line: plain
  * attribution to where the template came from, separate from the
  * "Published with scatterpost" badge in `config.ts` (which only
  * appears once the scatterpost connector is configured). This one is
