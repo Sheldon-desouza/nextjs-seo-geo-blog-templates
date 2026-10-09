@@ -324,3 +324,13 @@ a {
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
+
+.optional-scatterpost {
+  padding: 3rem 0 3.5rem;
+  border-top: 1px solid var(--border);
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9em;
+}

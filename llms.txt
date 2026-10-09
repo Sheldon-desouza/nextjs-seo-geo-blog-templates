@@ -11,10 +11,10 @@
 ## Live demos
 
 - [Demo gallery](https://demo.scatterpost.io/)
-- [Minimal](https://demo.scatterpost.io/minimal/): single column, serif, light and dark
-- [Developer](https://demo.scatterpost.io/developer/): syntax highlighting, table of contents
-- [Magazine](https://demo.scatterpost.io/magazine/): card grid with cover images and tags
-- [Changelog](https://demo.scatterpost.io/changelog/): blog plus changelog timeline
+- [Minimal](https://demo.scatterpost.io/minimal): single column, serif, light and dark
+- [Developer](https://demo.scatterpost.io/developer): syntax highlighting, table of contents
+- [Magazine](https://demo.scatterpost.io/magazine): card grid with cover images and tags
+- [Changelog](https://demo.scatterpost.io/changelog): blog plus changelog timeline
 
 ## Optional
 
