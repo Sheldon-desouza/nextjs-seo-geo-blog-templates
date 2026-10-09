@@ -16,7 +16,7 @@ export function demoTemplateName(): string | undefined {
 // This template's own "Deploy with Vercel" clone URL, copied from the
 // button in README.md, used when NEXT_PUBLIC_DEMO_DEPLOY_URL is unset.
 const DEPLOY_URL_FALLBACK =
-  "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET";
+  "https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL";
 
 export function demoDeployUrl(): string {
   return process.env.NEXT_PUBLIC_DEMO_DEPLOY_URL || DEPLOY_URL_FALLBACK;

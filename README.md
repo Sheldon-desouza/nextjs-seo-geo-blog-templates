@@ -22,7 +22,7 @@ Each demo runs on sample posts so you can click around before you deploy.
       <strong>Minimal</strong>: single column, readable, serif, light and dark.
       <br>
       <a href="https://demo.scatterpost.io/minimal/">Live demo</a> ·
-      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fminimal&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET">Deploy</a>
+      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fminimal&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL">Deploy</a>
     </td>
     <td width="50%">
       <a href="https://demo.scatterpost.io/developer/">
@@ -32,7 +32,7 @@ Each demo runs on sample posts so you can click around before you deploy.
       <strong>Developer</strong>: syntax highlighting, table of contents, dark-first.
       <br>
       <a href="https://demo.scatterpost.io/developer/">Live demo</a> ·
-      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fdeveloper&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET">Deploy</a>
+      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fdeveloper&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL">Deploy</a>
     </td>
   </tr>
   <tr>
@@ -44,7 +44,7 @@ Each demo runs on sample posts so you can click around before you deploy.
       <strong>Magazine</strong>: card grid home with cover images, tags and categories.
       <br>
       <a href="https://demo.scatterpost.io/magazine/">Live demo</a> ·
-      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fmagazine&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET">Deploy</a>
+      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fmagazine&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL">Deploy</a>
     </td>
     <td width="50%">
       <a href="https://demo.scatterpost.io/changelog/">
@@ -54,7 +54,7 @@ Each demo runs on sample posts so you can click around before you deploy.
       <strong>Changelog</strong>: blog plus a changelog timeline.
       <br>
       <a href="https://demo.scatterpost.io/changelog/">Live demo</a> ·
-      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET">Deploy</a>
+      <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL">Deploy</a>
     </td>
   </tr>
 </table>
@@ -65,12 +65,12 @@ Each button clones that one template into its own repository on your own Vercel 
 
 | Template | Deploy |
 |---|---|
-| [`minimal/`](./minimal) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fminimal&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET) |
-| [`developer/`](./developer) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fdeveloper&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET) |
-| [`magazine/`](./magazine) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fmagazine&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET) |
-| [`changelog/`](./changelog) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL,SCATTERPOST_WEBHOOK_SECRET) |
+| [`minimal/`](./minimal) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fminimal&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL) |
+| [`developer/`](./developer) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fdeveloper&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL) |
+| [`magazine/`](./magazine) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fmagazine&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL) |
+| [`changelog/`](./changelog) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL) |
 
-Vercel asks for `NEXT_PUBLIC_SITE_URL` (your site's full `https://` address) and `SCATTERPOST_WEBHOOK_SECRET`. The second only matters if you use the optional scatterpost connector. If you do not, enter any random string of 32 or more characters; the site never uses it elsewhere. Each template's own README has the full environment variable table.
+Vercel asks for `NEXT_PUBLIC_SITE_URL` (your site's full `https://` address). If you later connect scatterpost, add `SCATTERPOST_WEBHOOK_SECRET` in the Vercel project settings and redeploy. Each template's own README has the full environment variable table.
 
 ## What's built in for SEO and AI search
 
