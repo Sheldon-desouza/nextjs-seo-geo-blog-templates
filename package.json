@@ -1,9 +1,9 @@
 {
-  "name": "scatterpost-blog-templates",
+  "name": "nextjs-seo-geo-blog-templates",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "description": "MIT-licensed Next.js blog templates with the scatterpost website connector pre-wired.",
+  "description": "Free MIT Next.js blog templates built for SEO and GEO (generative engine optimisation): JSON-LD, llms.txt, sitemap, RSS, canonical links and OG images. Optional scatterpost connector.",
   "scripts": {
     "sync": "node scripts/sync-shared.mjs",
     "check": "node scripts/sync-shared.mjs --check",

@@ -102,7 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             {showCredit ? (
               <p className="footer-credit">
-                <a href="https://scatterpost.io/templates">Built with a scatterpost template</a>
+                <a href="https://github.com/Sheldon-desouza/nextjs-seo-geo-blog-templates">Built with nextjs-seo-geo-blog-templates</a>
               </p>
             ) : null}
           </footer>

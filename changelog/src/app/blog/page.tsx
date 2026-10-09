@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getStore, siteName } from "../../lib/site.ts";
+import { getStore } from "../../lib/site.ts";
 import { splitPosts } from "../../lib/changelog.ts";
 import { postPath } from "../../lib/scatterpost/post-paths.ts";
 
@@ -27,7 +27,7 @@ export default async function BlogIndexPage() {
       {posts.length === 0 ? (
         <div className="empty-state">
           <h2>No articles yet</h2>
-          <p>Connect {siteName()} to scatterpost to publish the first one.</p>
+          <p>Check back soon for the first one.</p>
         </div>
       ) : (
         <ul className="post-list">

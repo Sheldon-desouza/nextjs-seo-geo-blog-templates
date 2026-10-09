@@ -46,7 +46,7 @@ export function siteName(): string {
 }
 
 export function siteDescription(): string {
-  return process.env.SITE_DESCRIPTION || "Product updates and articles, published with scatterpost.";
+  return process.env.SITE_DESCRIPTION || "Product updates and articles.";
 }
 
 export function authorName(): string {

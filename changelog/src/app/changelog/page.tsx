@@ -32,7 +32,7 @@ export default async function ChangelogIndexPage() {
         <div className="empty-state">
           <h2>No updates yet</h2>
           <p>
-            Tag a post &quot;changelog&quot; when publishing through {siteName()}&apos;s scatterpost connection to
+            Tag a post &quot;changelog&quot; when publishing to {siteName()} to
             have it appear here as a dated entry.
           </p>
         </div>

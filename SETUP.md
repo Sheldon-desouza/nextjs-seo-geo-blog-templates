@@ -10,6 +10,17 @@ of traffic. It gives search engines and AI assistants a clean,
 well-described, quickly-discovered copy of your site to read; what they
 do with it after that is up to them.
 
+## 0. Is scatterpost required? No
+
+The scatterpost connector is optional. Its environment variables
+(`SCATTERPOST_WEBHOOK_SECRET`, `SCATTERPOST_API_URL`,
+`SCATTERPOST_API_KEY`) can stay unset: every template still builds,
+runs and serves posts from `content/posts` (or your chosen store).
+With them unset, `POST /api/scatterpost` and `GET /api/scatterpost/pull`
+return an error if called, and nothing else changes. The names keep
+the `scatterpost` prefix so sites that already use the connector keep
+working.
+
 ## 1. Google Search Console
 
 1. Go to [search.google.com/search-console](https://search.google.com/search-console)
@@ -33,10 +44,6 @@ do with it after that is up to them.
 2. Choose the "Meta tag" verification method, which gives you a code.
 3. Add it as `BING_SITE_VERIFICATION` in Vercel, and redeploy.
 4. Verify, then submit `sitemap.xml` here too.
-
-Bing's index is not just Bing search: it also feeds Microsoft Copilot
-and several other AI assistants. This one step reaches further than it
-looks.
 
 ## 3. Google Analytics (GA4), with a consent banner
 
@@ -71,13 +78,12 @@ variable needed:
 ## 5. IndexNow
 
 This is entirely optional; it only matters if you want new posts picked
-up by Bing (and the AI assistants it feeds) faster than Bing's own next
-crawl.
+up by Bing faster than Bing's own next crawl.
 
 1. Generate any random string of 8 to 128 characters, letters, numbers
    and hyphens only (a password generator works fine).
 2. Add it as `INDEXNOW_KEY` in Vercel, and redeploy.
-3. From then on, every time scatterpost publishes a post, your site
+3. From then on, every time a post arrives through the optional scatterpost connector, your site
    automatically pings IndexNow with the new URL. There is nothing
    further to click or configure; a failed ping never affects
    publishing itself.

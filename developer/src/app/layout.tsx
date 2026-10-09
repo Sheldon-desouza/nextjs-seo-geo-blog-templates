@@ -34,7 +34,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl()}/`),
   title: { default: siteName(), template: `%s | ${siteName()}` },
-  description: `${siteName()}, a blog by ${authorName()}, published with scatterpost.`,
+  description: `${siteName()}, a blog by ${authorName()}.`,
   alternates: {
     types: { "application/rss+xml": [{ url: "feed.xml", title: siteName() }] },
   },
@@ -98,7 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
             {showCredit ? (
               <p className="footer-credit">
-                <a href="https://scatterpost.io/templates">Built with a scatterpost template</a>
+                <a href="https://github.com/Sheldon-desouza/nextjs-seo-geo-blog-templates">Built with nextjs-seo-geo-blog-templates</a>
               </p>
             ) : null}
           </footer>

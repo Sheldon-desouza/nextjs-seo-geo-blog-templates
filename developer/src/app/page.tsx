@@ -45,11 +45,7 @@ export default async function HomePage() {
         <div className="empty-state">
           <h2>No posts yet</h2>
           <p>
-            This blog is ready to receive its first post. Connect it as a Website channel in
-            scatterpost with your deployed URL and a webhook secret (
-            <code>SCATTERPOST_WEBHOOK_SECRET</code>), or set up pull mode with{" "}
-            <code>SCATTERPOST_API_URL</code> and <code>SCATTERPOST_API_KEY</code>. See this
-            template&apos;s README for the exact steps.
+            This blog is ready for its first post. Add a Markdown file under <code>content/posts</code> when running locally, or connect a publishing source. See this template&apos;s README for the exact steps.
           </p>
         </div>
       ) : (
