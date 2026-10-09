@@ -57,7 +57,7 @@ None of this means an assistant will cite your page, quote it correctly, or even
 
 ## Where scatterpost fits
 
-scatterpost's optimisation tooling checks for these same things before a post goes out: an answer-first opening paragraph, a sensible heading structure, and a reminder to update `llms.txt` and `llms-full.txt` when a new post is published to your own site. It flags gaps rather than inventing numbers about how often any of this works, because nobody outside the AI labs actually knows that figure yet.
+scatterpost's optimisation tooling can check for these same things when you ask it to, before a post goes out: an answer-first opening paragraph, a sensible heading structure, and a reminder to update `llms.txt` and `llms-full.txt` when a new post is published to your own site. It flags gaps rather than inventing numbers about how often any of this works, because nobody outside the AI labs actually knows that figure yet.
 
 Write for the person asking the question, structure the page so a machine can find the answer quickly, and the rest follows from habit rather than from any one trick.
 
