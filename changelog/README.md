@@ -138,8 +138,8 @@ scatterpost recorded.
   changelog entry (the breadcrumb reflects `/blog` or `/changelog`);
   `WebSite` plus `Person` or `Organization` JSON-LD on the home page.
 - `sitemap.xml` with `lastModified` covering both sections; `robots.txt`
-  that allows search and AI crawlers by name (GPTBot, ClaudeBot,
-  PerplexityBot, Google-Extended) and links the sitemap and both feeds.
+  that allows all crawlers and also names GPTBot, ClaudeBot,
+  PerplexityBot and Google-Extended explicitly, and links the sitemap and both feeds.
 - Two RSS feeds: `/feed.xml` (everything) and `/changelog/feed.xml`
   (changelog only), both linked from every page with
   `rel="alternate"`.

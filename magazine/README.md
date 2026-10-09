@@ -143,8 +143,8 @@ always agrees with what scatterpost recorded.
   plus `Person` or `Organization` JSON-LD on the home page;
   `CollectionPage`/`ItemList` JSON-LD on every tag page.
 - `sitemap.xml` with `lastModified` for every post and tag page,
-  `robots.txt` that allows search and AI crawlers by name (GPTBot,
-  ClaudeBot, PerplexityBot, Google-Extended) and links the sitemap,
+  `robots.txt` that allows all crawlers and also names GPTBot, ClaudeBot,
+  PerplexityBot and Google-Extended explicitly, and links the sitemap,
   `/feed.xml` (RSS), `/llms.txt` and `/llms-full.txt`.
 
 None of this promises a ranking or a citation; it gives search engines
