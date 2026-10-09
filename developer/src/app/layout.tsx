@@ -4,7 +4,7 @@ import Link from "next/link";
 import "./globals.css";
 import { authorName, bingSiteVerification, googleSiteVerification, siteName, siteUrl } from "../lib/site.ts";
 import { NAV_LINKS, showScatterpostBadge } from "../lib/config.ts";
-import { showPublishedWithBadge, showScatterpostCredit } from "../lib/scatterpost/scatterpost-credit.ts";
+import { scatterpostConnectorConfigured, showPublishedWithBadge, showScatterpostCredit } from "../lib/scatterpost/scatterpost-credit.ts";
 import { ThemeToggle } from "../components/theme-toggle.tsx";
 import { DemoBar } from "../components/DemoBar.tsx";
 import { ConsentBanner, CookieSettingsLink } from "../components/consent-banner.tsx";
@@ -52,7 +52,7 @@ const noFlashThemeScript = `(function(){try{var t=localStorage.getItem('theme');
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const showCredit = showScatterpostCredit();
-  const showBadge = showPublishedWithBadge(showCredit, showScatterpostBadge());
+  const showBadge = showPublishedWithBadge(showCredit, showScatterpostBadge(), scatterpostConnectorConfigured());
   return (
     <html lang="en-GB" className={`${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
       <head>

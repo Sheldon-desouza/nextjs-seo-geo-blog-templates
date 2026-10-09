@@ -162,8 +162,8 @@ background lives in the repository root's `SETUP.md`. In short:
   `BING_SITE_VERIFICATION`.
 - **Google Analytics (GA4)**: optional. Set
   `NEXT_PUBLIC_GA_MEASUREMENT_ID` and a small cookie banner appears for
-  every visitor; nothing is tracked, and no cookie is set, until they
-  click Accept. "Cookie settings" in the footer lets them change their
+  every visitor; Google Analytics does not load, and sets no analytics
+  cookie, until they click Accept. "Cookie settings" in the footer lets them change their
   mind later.
 - **`robots.txt` and `llms.txt`**: generated automatically. `robots.txt`
   tells search engines and AI crawlers (GPTBot, ClaudeBot,
@@ -176,9 +176,10 @@ background lives in the repository root's `SETUP.md`. In short:
 - **Footer credit**: "Built with nextjs-seo-geo-blog-templates" links to
   the GitHub repository, shown by default. Set
   `NEXT_PUBLIC_SHOW_SCATTERPOST_CREDIT=false` to hide it, which brings
-  back the older "Published with scatterpost." sentence if
-  `NEXT_PUBLIC_SHOW_SCATTERPOST_BADGE` is not also set to `false`. A
-  footer never shows both at once.
+  back the older "Published with scatterpost." sentence, but only if the
+  scatterpost connector is configured (`SCATTERPOST_WEBHOOK_SECRET` or
+  `SCATTERPOST_API_KEY` is set) and `NEXT_PUBLIC_SHOW_SCATTERPOST_BADGE`
+  is not also set to `false`. A footer never shows both at once.
 
 None of this guarantees a ranking, a citation, or any particular amount
 of traffic; it simply gives search engines and AI assistants a clean,

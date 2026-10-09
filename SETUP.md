@@ -67,9 +67,8 @@ analytics.
 Every template generates these automatically, with no environment
 variable needed:
 
-- `robots.txt` tells every crawler it is welcome, and explicitly names
-  the crawlers behind AI search and assistants (GPTBot, ClaudeBot,
-  PerplexityBot, Google-Extended), in case a hosting platform's default
+- `robots.txt` allows all crawlers, and also names GPTBot, ClaudeBot,
+  PerplexityBot and Google-Extended explicitly, in case a hosting platform's default
   elsewhere would have blocked them.
 - `llms.txt` (and `llms-full.txt`) is a short, plain-text summary of
   your site written specifically for an AI assistant to read directly,

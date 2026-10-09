@@ -70,7 +70,7 @@ Each button clones that one template into its own repository on your own Vercel 
 | [`magazine/`](./magazine) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fmagazine&project-name=my-blog&repository-name=my-blog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL) |
 | [`changelog/`](./changelog) | [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSheldon-desouza%2Fnextjs-seo-geo-blog-templates%2Ftree%2Fmain%2Fchangelog&project-name=my-changelog&repository-name=my-changelog&stores=%5B%7B%22type%22%3A%22blob%22%7D%5D&env=NEXT_PUBLIC_SITE_URL) |
 
-Vercel asks for `NEXT_PUBLIC_SITE_URL` (your site's full `https://` address). If you later connect scatterpost, add `SCATTERPOST_WEBHOOK_SECRET` in the Vercel project settings and redeploy. Each template's own README has the full environment variable table.
+Each Deploy button asks for one environment variable, `NEXT_PUBLIC_SITE_URL` (your site's full `https://` address). If you later connect scatterpost, add `SCATTERPOST_WEBHOOK_SECRET` in the Vercel project settings and redeploy. Each template's own README has the full environment variable table.
 
 ## What's built in for SEO and AI search
 
@@ -85,7 +85,7 @@ Every item below exists in the code of all four templates.
 - [x] Open Graph images generated for every post
 - [x] Search Console and Bing Webmaster verification through `GOOGLE_SITE_VERIFICATION` and `BING_SITE_VERIFICATION`
 - [x] IndexNow pings for new posts that arrive through the optional connector, once you set `INDEXNOW_KEY` (off by default)
-- [x] Optional GA4 analytics behind a consent banner: nothing loads and no cookie is set until a visitor agrees
+- [x] Optional GA4 analytics behind a consent banner: Google Analytics does not load and sets no analytics cookie until a visitor agrees
 - [x] Light and dark mode, and semantic markup
 
 This gives search engines and AI assistants a clean, well-described copy of your site to read. It does not promise any ranking, traffic or citation. What search engines and AI assistants do with it is up to them.
@@ -98,7 +98,7 @@ Step-by-step setup for Search Console, Bing, GA4 and IndexNow is in [`SETUP.md`]
 It generates the technical pieces that search engines commonly read: structured data, a sitemap, an RSS feed, canonical links and Open Graph images. Whether a page ranks depends on much more than a template, and nothing here guarantees a ranking.
 
 **What is GEO and how does this help?**
-GEO is generative engine optimisation (also written "generative engine optimization"): making your content easy for AI assistants and AI search to find and read. These templates publish `llms.txt` and `llms-full.txt` plain-text summaries, structured data, and a `robots.txt` that allows the main AI crawlers. That helps an AI system read your site. It does not promise that any assistant will cite you.
+GEO is generative engine optimisation (also written "generative engine optimization"): making your content easy for AI assistants and AI search to find and read. These templates publish `llms.txt` and `llms-full.txt` plain-text summaries, structured data, and a `robots.txt` that allows all crawlers and also names GPTBot, ClaudeBot, PerplexityBot and Google-Extended explicitly. That helps an AI system read your site. It does not promise that any assistant will cite you.
 
 **Does it work without scatterpost?**
 Yes. Each template is a normal Next.js blog. Add Markdown files under `content/posts` when running locally, or use the connector if you want to publish from an AI assistant. With the scatterpost environment variables unset, the two connector endpoints return an error if called and the rest of the site is unaffected.
@@ -116,13 +116,13 @@ Yes. Each template is a plain Next.js app you own outright: edit the components,
 In Vercel Blob by default once deployed, with a file store (`content/posts/*.md`) for local development and an optional Supabase store as an alternative. `CONTENT_STORE` chooses between them.
 
 **How do I remove the "Built with" credit?**
-Set `NEXT_PUBLIC_SHOW_SCATTERPOST_CREDIT=false` in the deployed project's environment variables and redeploy.
+Set `NEXT_PUBLIC_SHOW_SCATTERPOST_CREDIT=false` in the deployed project's environment variables and redeploy. If you use scatterpost, the footer then says "Published with scatterpost."; set `NEXT_PUBLIC_SHOW_SCATTERPOST_BADGE=false` as well to show neither.
 
 ## Optional: publish from your AI assistant with scatterpost
 
-Let your AI assistant write and publish here, then share copies to Dev.to, LinkedIn and more. [scatterpost](https://scatterpost.io) is a separate, paid tool that publishes to your blog first, then cross-posts with the canonical link pointing back to your site.
+Let your AI assistant write and publish here, then share copies to Dev.to, LinkedIn and more. [scatterpost](https://scatterpost.io) is a separate tool, with a free plan and paid plans, that publishes to your blog first, then cross-posts with the canonical link pointing back to your site.
 
-Tested with Claude, ChatGPT and Gemini. Other AI apps that support remote MCP connectors with sign-in can use the same address.
+Tested with Claude, ChatGPT and Gemini. Publishing through ChatGPT is not yet tested. Other AI apps that support remote MCP connectors with sign-in can use the same address.
 
 1. Deploy a template with the button above.
 2. In scatterpost, add a Website channel and paste the secret it gives you into the blog's `SCATTERPOST_WEBHOOK_SECRET` env var, then redeploy. See the [website connector docs](https://scatterpost.io/docs/website-connector), or [connecting an existing site](https://scatterpost.io/docs/existing-site) if you already have a blog.
@@ -156,7 +156,7 @@ Each template is self-contained: its own `package.json` and `package-lock.json`,
 
 ### Licence
 
-MIT. This repository is independent of scatterpost's own proprietary codebase: nothing here depends on a private package, and these templates may be used, forked and redeployed freely under the terms of the licence.
+MIT. Next.js and Vercel are trade marks of Vercel Inc.; this project is not affiliated with or endorsed by Vercel. This repository is independent of scatterpost's own proprietary codebase: nothing here depends on a private package, and these templates may be used, forked and redeployed freely under the terms of the licence.
 
 ---
 
